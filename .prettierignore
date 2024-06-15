@@ -1,0 +1,11 @@
+# Ignore all files in the "dist" directory
+/dist
+
+# Ignore specific file
+/ignored-file.js
+
+# Ignore all markdown files
+*.md
+
+# Ignore files in a specific directory
+/docs/*.js

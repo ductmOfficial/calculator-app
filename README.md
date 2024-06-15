@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Calculator App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+- [Overview](#overview)
+- [Features](#features)
+- [Usage](#usage)
+  - [Installation](#installation)
+  - [Usage Notes](#usage-notes)
+- [Functionality](#functionality)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
 
-In the project directory, you can run:
+## Overview
 
-### `yarn start`
+This is a simple calculator web application built using React. It performs basic arithmetic operations and handles keyboard input for ease of use.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Arithmetic operations: addition (+), subtraction (‑), multiplication (x), division (/)
+- Decimal point (.) for floating-point numbers
+- Clear button (AC) to reset the calculator
+- Evaluate button (=) to compute the result
+- Responsive design for various screen sizes
+- Keyboard support for intuitive input (numeric keys, operators, Enter for evaluate, Backspace for clear)
 
-### `yarn test`
+## Usage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `yarn build`
+1. Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/ductmOfficial/calculator-app.git
+   cd calculator-app
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm install
+   ```
 
-### `yarn eject`
+3. Start the development server:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Open your browser and navigate to `http://localhost:3000` to view the app.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Usage Notes
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Keyboard Input**: You can use your keyboard to input numbers and perform operations:
+  - Numeric keys (0-9) input corresponding numbers.
+  - Operators: + (addition), - (subtraction), * (multiplication), / (division).
+  - Decimal point (.) for decimal numbers.
+  - Enter key evaluates the expression.
+  - Backspace key clears the calculator.
 
-## Learn More
+- **Button Clicks**: Alternatively, you can use the buttons displayed on the calculator interface to perform operations.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Functionality
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Display**: The top section (`formula-screen`) displays the current mathematical expression or formula being evaluated.
+- **Output**: The main display (`output-screen`) shows the current input or the result of the calculation.
+- **Limit Handling**: If the input exceeds 21 characters, a warning message (`Digit Limit Met`) briefly appears to indicate the limit.
 
-### Code Splitting
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- React
+- JavaScript (ES6+)
+- HTML5
+- CSS3
 
-### Analyzing the Bundle Size
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions are welcome! If you have any suggestions, improvements, or issues, please open an issue or submit a pull request.
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

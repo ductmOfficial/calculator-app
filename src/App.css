@@ -1,38 +1,94 @@
 .App {
-  text-align: center;
+  background-color: #f0f4c3;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #263238;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.calculator {
+  width: 360px;
+  height: 440px;
+  background-color: #1e88e5;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.formula-screen {
+  height: 30px;
+  font-size: 1.2rem;
+  align-items: flex-end;
+  justify-content: flex-end;
+  display: flex;
+  color: #bbdefb;
+  padding: 5px;
+  border-bottom: 1px solid #1e88e5;
+}
+
+.output-screen {
+  height: 40px;
+  font-size: 1.75rem;
+  align-items: flex-end;
+  justify-content: flex-end;
+  display: flex;
+  color: #ffffff;
+  padding: 5px;
+  border-bottom: 1px solid #1e88e5;
+}
+
+.input-screen {
+  flex: 1;
+  margin-top: 15px;
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.input-screen > div {
+  font-size: 1.5rem;
+  background-color: #42a5f5;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #ffffff;
 }
 
-.App-link {
-  color: #61dafb;
+.input-screen > div:hover {
+  background-color: #1e88e5;
+  color: #f0f4c3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#subtract,
+#add,
+#divide,
+#multiply {
+  color: #ffffff;
+  background-color: #0d47a1;
+}
+
+#equals {
+  background-color: #ff7043;
+  grid-column: 4/5;
+  grid-row: 4/6;
+  color: #ffffff;
+}
+
+#clear {
+  background-color: #e53935;
+  grid-column: 1/3;
+  color: #ffffff;
+}
+
+#zero {
+  grid-column: 1/3;
 }

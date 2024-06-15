@@ -1,0 +1,30 @@
+# Example .editorconfig
+
+# Top-most EditorConfig file
+root = true
+
+# Unix-style line endings
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+trim_trailing_whitespace = true
+
+# JavaScript files
+[*.js]
+indent_style = space
+indent_size = 2
+
+# TypeScript files
+[*.ts]
+indent_style = space
+indent_size = 2
+
+# HTML files
+*.htmlØ
+indent_style = space
+indent_size = 2
+
+# Markdown files
+*.md
+trim_trailing_whitespace = false
